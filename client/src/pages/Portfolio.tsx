@@ -2,44 +2,46 @@ import { Layout } from "../components/shared/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Download, Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { ArrowRight, Download, Github, Linkedin, Mail, MapPin, Phone, Globe } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Portfolio() {
-  // Personal details - Replace these with your own information
+  // Personal details - Mubassir's information
   const personalInfo = {
-    name: "Alex Johnson",
-    title: "Computer Science Student | Front-End Developer",
-    location: "Boston, USA",
-    email: "alex.johnson@example.com",
-    github: "https://github.com/alexj",
-    linkedin: "https://linkedin.com/in/alexjohnson",
-    bio: `Passionate CS student specializing in web development. I love building intuitive 
-          interfaces and solving complex problems with clean code. Currently seeking 
-          internship opportunities in software development.`
+    name: "MUBASSIR JAVAD MUJEEB",
+    title: "AI-Cybersecurity Innovator | Sustainable Tech Evangelist | Cross-Domain Leader",
+    location: "Abu Dhabi",
+    email: "mubassirpoduvanni@gmail.com",
+    phone: "+971 569723931",
+    github: "https://github.com/sanu123-mj",
+    linkedin: "https://linkedin.com/in/mubassir-javad",
+    website: "#",
+    bio: `Innovative IT professional with expertise in AI Engineering, Cybersecurity Operations, and Sustainable Technology solutions. 
+          Built multiple production-grade AI systems, conducted red team exercises for network security, and pioneered IoT-enabled 
+          waste management solutions. Passionate about leveraging technology for sustainable development and creating impactful solutions.`
   };
 
-  // Featured skills - these will be shown on the home page
+  // Featured skills - Mubassir's core skills
   const featuredSkills = [
-    "JavaScript", "React", "Node.js", "TypeScript", "CSS/Tailwind", 
-    "Python", "Git", "UI/UX Design"
+    "AI Engineering", "Cybersecurity", "Rust", "Python", "TensorFlow", 
+    "PyTorch", "IoT", "Sustainability Tech", "Leadership", "NLP"
   ];
 
-  // Featured projects - these will be shown on the home page
+  // Featured projects - Mubassir's projects
   const featuredProjects = [
     {
-      name: "Weather Dashboard",
-      description: "Real-time weather application with location-based forecasts and interactive maps",
-      tech: ["React", "OpenWeather API", "Leaflet.js"],
-      demo: "https://weather-dash.netlify.app",
-      github: "https://github.com/alexj/weather-dashboard",
+      name: "MedScan-AI: Advanced Disease Prediction System",
+      description: "Multi-disease prediction system using CNN and Transfer Learning. Predicts 5 cancer types, 8 skin diseases, and various other conditions with 92% accuracy across all categories.",
+      tech: ["Python", "TensorFlow", "PyTorch", "Flask", "OpenCV"],
+      demo: "#",
+      github: "https://github.com/sanu123-mj/MedScan-AI",
     },
     {
-      name: "Task Master",
-      description: "Productivity application with Kanban board, calendar integration, and notification system",
-      tech: ["React", "Firebase", "Node.js"],
-      demo: "https://taskmaster-app.vercel.app",
-      github: "https://github.com/alexj/task-master",
+      name: "Explore Abu Dhabi: Tourism Portal",
+      description: "Comprehensive tourism portal with real-time chatbot integration, unified booking system for attractions and transport, and client-server architecture for scalability.",
+      tech: ["HTML/CSS/JavaScript", "Bootstrap", "Django", "MySQL", "Google Maps API"],
+      demo: "#",
+      github: "#",
     }
   ];
 
@@ -61,6 +63,18 @@ export default function Portfolio() {
             <div className="flex items-center text-muted-foreground">
               <MapPin className="h-4 w-4 mr-1" />
               <span>{personalInfo.location}</span>
+            </div>
+            <div className="flex items-center text-muted-foreground mt-1">
+              <Mail className="h-4 w-4 mr-1" />
+              <a href={`mailto:${personalInfo.email}`} className="hover:text-primary transition-colors">
+                {personalInfo.email}
+              </a>
+            </div>
+            <div className="flex items-center text-muted-foreground mt-1">
+              <Phone className="h-4 w-4 mr-1" />
+              <a href={`tel:${personalInfo.phone}`} className="hover:text-primary transition-colors">
+                {personalInfo.phone}
+              </a>
             </div>
           </div>
           <p className="text-lg text-muted-foreground">
@@ -88,11 +102,13 @@ export default function Portfolio() {
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" asChild>
-                <a href={`mailto:${personalInfo.email}`}>
-                  <Mail className="h-5 w-5" />
-                </a>
-              </Button>
+              {personalInfo.website && (
+                <Button variant="ghost" size="icon" asChild>
+                  <a href={personalInfo.website} target="_blank" rel="noopener noreferrer">
+                    <Globe className="h-5 w-5" />
+                  </a>
+                </Button>
+              )}
             </div>
           </div>
         </div>
@@ -178,15 +194,23 @@ export default function Portfolio() {
       <section className="py-8 md:py-12">
         <Card className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 border-0">
           <CardContent className="p-8 text-center">
-            <h2 className="text-2xl font-bold mb-4">Interested in working together?</h2>
+            <h2 className="text-2xl font-bold mb-4">Let's Build Innovative Solutions Together</h2>
             <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-              I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+              Whether you need expertise in AI systems, cybersecurity enhancements, or sustainable tech solutions, 
+              I'm ready to collaborate on transformative projects that make a difference.
             </p>
-            <Button size="lg" asChild>
-              <Link href="/contact">
-                Get in Touch <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Button size="lg" asChild>
+                <Link href="/contact">
+                  Discuss a Project <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <Link href="/projects">
+                  View All Projects <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
           </CardContent>
         </Card>
       </section>

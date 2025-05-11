@@ -4,41 +4,50 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Skills() {
-  // Technical skills with proficiency levels
+  // Technical skills with proficiency levels - Mubassir's skills
   const technicalSkills = [
-    { category: "Programming Languages", skills: [
-      { name: "JavaScript", level: 85 },
-      { name: "TypeScript", level: 80 },
-      { name: "Python", level: 75 },
-      { name: "Java", level: 65 },
-      { name: "C++", level: 60 },
+    { category: "AI Engineering", skills: [
+      { name: "Python", level: 90 },
+      { name: "TensorFlow", level: 85 },
+      { name: "PyTorch", level: 80 },
+      { name: "Rust for AI", level: 85 },
+      { name: "Computer Vision", level: 90 },
     ]},
-    { category: "Web Technologies", skills: [
-      { name: "HTML5", level: 95 },
-      { name: "CSS3/SCSS", level: 90 },
-      { name: "React", level: 85 },
-      { name: "Node.js", level: 80 },
-      { name: "Express", level: 75 },
+    { category: "Cybersecurity", skills: [
+      { name: "Network Security", level: 85 },
+      { name: "Red Team Exercises", level: 80 },
+      { name: "Ethical Hacking", level: 85 },
+      { name: "Identity & Access Management", level: 75 },
+      { name: "Security Analysis", level: 80 },
     ]},
-    { category: "Database & Tools", skills: [
-      { name: "MongoDB", level: 80 },
-      { name: "PostgreSQL", level: 75 },
-      { name: "Git/GitHub", level: 90 },
-      { name: "Docker", level: 70 },
-      { name: "AWS", level: 65 },
+    { category: "Sustainable Tech", skills: [
+      { name: "IoT Systems", level: 85 },
+      { name: "Waste Management Solutions", level: 90 },
+      { name: "Carbon Footprint Calculation", level: 85 },
+      { name: "Solar Energy Optimization", level: 75 },
+      { name: "Real-time Detection Systems", level: 80 },
+    ]},
+    { category: "Development & Tools", skills: [
+      { name: "Django", level: 80 },
+      { name: "Flask", level: 85 },
+      { name: "MySQL/SQL", level: 80 },
+      { name: "Git/GitHub", level: 85 },
+      { name: "Google Cloud", level: 75 },
     ]},
   ];
 
   // Soft skills
   const softSkills = [
-    "Team Collaboration",
-    "Problem Solving",
-    "Communication",
-    "Time Management",
-    "Adaptability",
-    "Critical Thinking",
-    "Attention to Detail",
     "Leadership",
+    "Cross-Domain Expertise",
+    "Client Communication",
+    "Multi-lingual (English, Malayalam, Arabic, Hindi, Spanish)",
+    "Project Management",
+    "Problem Solving",
+    "Innovative Thinking",
+    "Research & Analysis",
+    "Public Speaking",
+    "Team Training",
   ];
 
   return (
@@ -98,10 +107,53 @@ export default function Skills() {
           </TabsContent>
         </Tabs>
 
-        <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-lg p-6 text-center">
-          <h2 className="text-xl font-bold mb-2">Continuous Learning</h2>
-          <p className="text-muted-foreground">
-            I'm constantly improving my skills and learning new technologies. Currently exploring cloud architecture and machine learning.
+        <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-lg p-6">
+          <h2 className="text-xl font-bold mb-4 text-center">Certifications & Continuous Learning</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div className="border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+              <h3 className="font-bold text-blue-600 dark:text-blue-400 mb-2">AI/ML Credentials</h3>
+              <ul className="space-y-2">
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-2"></div>
+                  <div>
+                    <span className="font-medium">Harvard CS50</span>
+                    <p className="text-sm text-muted-foreground">Machine Learning with Python</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-2"></div>
+                  <div>
+                    <span className="font-medium">Google Cloud</span>
+                    <p className="text-sm text-muted-foreground">TensorFlow Image Classification</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="border border-purple-200 dark:border-purple-800 rounded-lg p-4">
+              <h3 className="font-bold text-purple-600 dark:text-purple-400 mb-2">Cybersecurity Authority</h3>
+              <ul className="space-y-2">
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-purple-500 mt-2 mr-2"></div>
+                  <div>
+                    <span className="font-medium">CISCO</span>
+                    <p className="text-sm text-muted-foreground">Ethical Hacking</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-purple-500 mt-2 mr-2"></div>
+                  <div>
+                    <span className="font-medium">IBM</span>
+                    <p className="text-sm text-muted-foreground">Security Verify Administrator</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <p className="text-center text-muted-foreground mt-4">
+            Currently focusing on advancing my expertise in sustainable technology solutions and exploring the integration of AI with IoT for environmental applications.
           </p>
         </div>
       </div>

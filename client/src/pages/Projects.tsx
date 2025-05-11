@@ -2,63 +2,64 @@ import { Layout } from "../components/shared/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, Mail } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Projects() {
-  // Project data - Replace with your own projects
+  // Project data - Mubassir's projects
   const projects = [
     {
-      name: "Weather Dashboard",
-      description: "A real-time weather application that provides location-based forecasts and interactive maps. Users can search for any city worldwide and get detailed weather information including temperature, humidity, wind speed, and a 5-day forecast.",
-      tech: ["React", "OpenWeather API", "Leaflet.js", "Tailwind CSS", "Axios"],
-      image: "https://images.unsplash.com/photo-1534088568595-a066f410bcda?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      demo: "https://weather-dash.netlify.app",
-      github: "https://github.com/alexj/weather-dashboard",
+      name: "MedScan-AI: Advanced Disease Prediction System",
+      description: "Multi-disease prediction system using CNN and Transfer Learning architectures like ResNet50 and VGG16. Predicts 5 cancer types, 8 skin diseases, and various other conditions with 92% accuracy across all categories. Supports multiple imaging inputs including CT, MRI, X-ray, Ultrasound and Retinal images.",
+      tech: ["Python", "TensorFlow", "PyTorch", "Flask", "OpenCV", "Pandas", "Scikit-learn"],
+      image: "https://images.unsplash.com/photo-1576671495234-3291ecf2a576?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      demo: "#",
+      github: "https://github.com/sanu123-mj/MedScan-AI",
       featured: true
     },
     {
-      name: "Task Master",
-      description: "A comprehensive productivity application featuring a Kanban board for task management, calendar integration for scheduling, and a notification system for reminders. It includes drag-and-drop functionality and task filtering.",
-      tech: ["React", "Firebase", "Node.js", "Express", "Mongoose", "React DnD"],
-      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      demo: "https://taskmaster-app.vercel.app",
-      github: "https://github.com/alexj/task-master",
+      name: "Explore Abu Dhabi: Tourism Portal",
+      description: "Comprehensive tourism portal with real-time chatbot integration, unified booking system for attractions and transport, and client-server architecture for scalability. Improves tourist navigation efficiency and provides centralized reservation management.",
+      tech: ["HTML/CSS/JavaScript", "Bootstrap", "Django", "Python", "MySQL", "Google Maps API"],
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      demo: "#",
+      github: "#",
       featured: true
     },
     {
-      name: "E-Commerce Platform",
-      description: "A full-featured e-commerce platform with product catalog, shopping cart, secure checkout, and user authentication. Includes an admin dashboard for product and order management.",
-      tech: ["Next.js", "MongoDB", "Stripe API", "AWS S3", "Redux"],
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      demo: "https://next-ecommerce-demo.vercel.app",
-      github: "https://github.com/alexj/next-ecommerce",
+      name: "Mubi AI Chatbot",
+      description: "Specialized AI chatbot using the Rasa NLP framework with supervised learning for context-aware responses. Features dynamic adaptation to user preferences and multi-intent conversation handling, focused on tourism and transportation recommendations.",
+      tech: ["Python", "Rasa NLP", "Machine Learning", "RESTful APIs", "Docker"],
+      image: "https://images.unsplash.com/photo-1531379410502-63bfe8cdaf6f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      demo: "#",
+      github: "#",
+      featured: true
+    },
+    {
+      name: "Carbon Footprint Calculator",
+      description: "Sustainability tool that helps individuals and businesses calculate their carbon emissions based on various activities and consumption patterns. Provides personalized recommendations for reducing environmental impact.",
+      tech: ["Python", "Flask", "Chart.js", "SQLite", "Bootstrap"],
+      image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      demo: "#",
+      github: "#",
       featured: false
     },
     {
-      name: "Code Mentor Platform",
-      description: "An educational platform connecting programming students with mentors. Features include video chat, code sharing, and a scheduling system for booking mentoring sessions.",
-      tech: ["React", "Socket.io", "WebRTC", "MongoDB", "Express", "Node.js"],
-      image: "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      demo: "https://code-mentor-platform.netlify.app",
-      github: "https://github.com/alexj/code-mentor",
+      name: "Real-Time Plastic Detection System",
+      description: "Computer vision application for identifying and classifying plastic waste in various environments. Uses deep learning to detect different types of plastics and estimates their environmental impact.",
+      tech: ["Python", "TensorFlow", "OpenCV", "YOLO", "Raspberry Pi"],
+      image: "https://images.unsplash.com/photo-1588349482083-036b31c6eca3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      demo: "#",
+      github: "#",
       featured: false
     },
     {
-      name: "Budget Tracker",
-      description: "A personal finance application for tracking income, expenses, and savings goals. Includes data visualization for spending patterns and budget forecasting.",
-      tech: ["Vue.js", "Chart.js", "Firebase", "Vuex", "Tailwind CSS"],
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      demo: "https://budget-tracker-app.netlify.app",
-      github: "https://github.com/alexj/budget-tracker",
-      featured: false
-    },
-    {
-      name: "Recipe Finder",
-      description: "A recipe discovery application that allows users to search for recipes based on ingredients, dietary restrictions, and cuisine type. Includes save functionality and meal planning.",
-      tech: ["React", "Spoonacular API", "Redux Toolkit", "Styled Components"],
-      image: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      demo: "https://recipe-finder-app.netlify.app",
-      github: "https://github.com/alexj/recipe-finder",
+      name: "Solar Energy Optimization Algorithm",
+      description: "Smart algorithm that maximizes solar panel efficiency by predicting optimal positioning based on weather forecasts, time of day, and geographical location. Increases energy output by up to 18%.",
+      tech: ["Python", "NumPy", "SciPy", "Weather API", "IoT Integration"],
+      image: "https://images.unsplash.com/photo-1458142833999-7bde63073128?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      demo: "#",
+      github: "#",
       featured: false
     }
   ];
@@ -130,15 +131,23 @@ export default function Projects() {
         </div>
 
         <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-lg p-6 text-center mb-6">
-          <h2 className="text-xl font-bold mb-2">Want to see more?</h2>
+          <h2 className="text-xl font-bold mb-2">Innovative Solutions for Complex Challenges</h2>
           <p className="text-muted-foreground mb-4">
-            Check out my GitHub profile for more projects and contributions
+            Explore more of my projects and contributions on GitHub. I specialize in AI-powered applications, 
+            cybersecurity solutions, and sustainable technology innovations.
           </p>
-          <Button asChild>
-            <a href="https://github.com/alexj" target="_blank" rel="noopener noreferrer">
-              <Github className="mr-2 h-4 w-4" /> View GitHub Profile
-            </a>
-          </Button>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button asChild>
+              <a href="https://github.com/sanu123-mj" target="_blank" rel="noopener noreferrer">
+                <Github className="mr-2 h-4 w-4" /> View GitHub Profile
+              </a>
+            </Button>
+            <Button variant="outline" asChild>
+              <Link href="/contact">
+                <Mail className="mr-2 h-4 w-4" /> Discuss a Collaboration
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </Layout>
