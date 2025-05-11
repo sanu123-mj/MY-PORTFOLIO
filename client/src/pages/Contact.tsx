@@ -18,13 +18,13 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Contact information - Replace with your own
+  // Contact information - Mubassir's information
   const contactInfo = {
-    email: "alex.johnson@example.com",
-    phone: "+1 (555) 123-4567",
-    location: "Boston, Massachusetts, USA",
-    github: "https://github.com/alexj",
-    linkedin: "https://linkedin.com/in/alexjohnson"
+    email: "mubassirpoduvanni@gmail.com",
+    phone: "+971 569723931",
+    location: "Abu Dhabi, UAE",
+    github: "https://github.com/sanu123-mj",
+    linkedin: "https://linkedin.com/in/mubassir-javad"
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -55,8 +55,8 @@ export default function Contact() {
 
   return (
     <Layout 
-      title="Contact" 
-      description="Get in touch with me for collaborations, job opportunities, or just to say hello"
+      title="Contact Mubassir" 
+      description="Get in touch with me for AI consultations, cybersecurity solutions, or sustainable tech collaborations"
     >
       <div className="max-w-5xl mx-auto">
         <div className="mb-10 space-y-2">
@@ -64,7 +64,7 @@ export default function Contact() {
             Get in <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Touch</span>
           </h1>
           <p className="text-muted-foreground text-lg">
-            Let's connect! Reach out for project inquiries, job opportunities, or just to say hello.
+            Let's collaborate on innovative solutions! Whether you need AI expertise, cybersecurity enhancements, or sustainable technology implementation, I'm ready to help transform your ideas into reality.
           </p>
         </div>
 
@@ -208,10 +208,24 @@ export default function Contact() {
             </Card>
 
             <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-lg p-6">
-              <h2 className="text-xl font-bold mb-2">Availability</h2>
-              <p className="text-muted-foreground">
-                Currently available for freelance projects, internships, and full-time positions.
+              <h2 className="text-xl font-bold mb-2">Expertise & Availability</h2>
+              <p className="text-muted-foreground mb-4">
+                Available for AI engineering projects, cybersecurity consultations, and sustainable technology initiatives.
               </p>
+              <div className="space-y-2">
+                <div className="flex items-center">
+                  <div className="w-2 h-2 rounded-full bg-blue-500 mr-2"></div>
+                  <span className="text-sm">AI & Machine Learning Solutions</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-2 h-2 rounded-full bg-blue-500 mr-2"></div>
+                  <span className="text-sm">Cybersecurity Assessments & Implementation</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-2 h-2 rounded-full bg-blue-500 mr-2"></div>
+                  <span className="text-sm">Sustainable Technology Development</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
