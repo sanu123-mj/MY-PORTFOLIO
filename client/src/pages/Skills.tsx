@@ -6,33 +6,47 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 export default function Skills() {
   // Technical skills with proficiency levels - Mubassir's skills
   const technicalSkills = [
-    { category: "AI Engineering", skills: [
-      { name: "Python", level: 90 },
-      { name: "TensorFlow", level: 85 },
-      { name: "PyTorch", level: 80 },
-      { name: "Rust for AI", level: 85 },
-      { name: "Computer Vision", level: 90 },
+    { category: "AI Frameworks & ML", skills: [
+      { name: "TensorFlow", level: 90 },
+      { name: "PyTorch", level: 85 },
+      { name: "Keras", level: 82 },
+      { name: "Scikit-learn", level: 88 },
+      { name: "Rasa", level: 80 },
     ]},
-    { category: "Cybersecurity", skills: [
-      { name: "Network Security", level: 85 },
-      { name: "Red Team Exercises", level: 80 },
-      { name: "Ethical Hacking", level: 85 },
-      { name: "Identity & Access Management", level: 75 },
-      { name: "Security Analysis", level: 80 },
+    { category: "Cybersecurity Tools", skills: [
+      { name: "Nmap", level: 90 },
+      { name: "Wireshark", level: 85 },
+      { name: "Metasploit", level: 82 },
+      { name: "Burp Suite", level: 80 },
+      { name: "OWASP ZAP", level: 78 },
     ]},
-    { category: "Sustainable Tech", skills: [
-      { name: "IoT Systems", level: 85 },
-      { name: "Waste Management Solutions", level: 90 },
+    { category: "Network & Cloud Security", skills: [
+      { name: "Firewall Configuration", level: 85 },
+      { name: "VPN Setup", level: 82 },
+      { name: "IDS/IPS", level: 80 },
+      { name: "AWS Security", level: 83 },
+      { name: "Google Cloud Security", level: 81 },
+    ]},
+    { category: "Programming Languages", skills: [
+      { name: "Python", level: 95 },
+      { name: "Rust", level: 88 },
+      { name: "C++", level: 80 },
+      { name: "SQL", level: 85 },
+      { name: "Go", level: 78 },
+    ]},
+    { category: "Web & IoT Development", skills: [
+      { name: "HTML/CSS/JavaScript", level: 83 },
+      { name: "IoT Systems", level: 86 },
       { name: "Carbon Footprint Calculation", level: 85 },
-      { name: "Solar Energy Optimization", level: 75 },
-      { name: "Real-time Detection Systems", level: 80 },
+      { name: "Real-time Detection Systems", level: 82 },
+      { name: "Sustainable Tech Solutions", level: 89 },
     ]},
-    { category: "Development & Tools", skills: [
-      { name: "Django", level: 80 },
-      { name: "Flask", level: 85 },
-      { name: "MySQL/SQL", level: 80 },
+    { category: "Tools & Project Management", skills: [
+      { name: "Jira", level: 85 },
+      { name: "Asana", level: 80 },
+      { name: "MS Office Suite", level: 90 },
+      { name: "Power BI", level: 88 },
       { name: "Git/GitHub", level: 85 },
-      { name: "Google Cloud", level: 75 },
     ]},
   ];
 
@@ -108,53 +122,153 @@ export default function Skills() {
         </Tabs>
 
         <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-lg p-6">
-          <h2 className="text-xl font-bold mb-4 text-center">Certifications & Continuous Learning</h2>
-          
+          <h2 className="text-xl font-bold mb-4 text-center">Certifications & Professional Development</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <div className="border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-              <h3 className="font-bold text-blue-600 dark:text-blue-400 mb-2">AI/ML Credentials</h3>
+              <h3 className="font-bold text-blue-600 dark:text-blue-400 mb-3">AI & Data Science</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-2"></div>
                   <div>
-                    <span className="font-medium">Harvard CS50</span>
-                    <p className="text-sm text-muted-foreground">Machine Learning with Python</p>
+                    <span className="font-medium">CS50 Introduction</span>
+                    <p className="text-sm text-muted-foreground">Harvard University</p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-2"></div>
                   <div>
-                    <span className="font-medium">Google Cloud</span>
-                    <p className="text-sm text-muted-foreground">TensorFlow Image Classification</p>
+                    <span className="font-medium">Classify Images with TensorFlow</span>
+                    <p className="text-sm text-muted-foreground">Google Cloud</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-2"></div>
+                  <div>
+                    <span className="font-medium">Introduction to Machine Learning</span>
+                    <p className="text-sm text-muted-foreground">Google Cloud</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-2"></div>
+                  <div>
+                    <span className="font-medium">Data Analytics Essentials</span>
+                    <p className="text-sm text-muted-foreground">CISCO</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-2"></div>
+                  <div>
+                    <span className="font-medium">Google Cloud Computing Foundations</span>
+                    <p className="text-sm text-muted-foreground">Data, ML, and AI in Google Cloud</p>
                   </div>
                 </li>
               </ul>
             </div>
             
             <div className="border border-purple-200 dark:border-purple-800 rounded-lg p-4">
-              <h3 className="font-bold text-purple-600 dark:text-purple-400 mb-2">Cybersecurity Authority</h3>
+              <h3 className="font-bold text-purple-600 dark:text-purple-400 mb-3">Cybersecurity</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-purple-500 mt-2 mr-2"></div>
                   <div>
-                    <span className="font-medium">CISCO</span>
-                    <p className="text-sm text-muted-foreground">Ethical Hacking</p>
+                    <span className="font-medium">Certificate of Ethical Hacking</span>
+                    <p className="text-sm text-muted-foreground">CISCO</p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-purple-500 mt-2 mr-2"></div>
                   <div>
-                    <span className="font-medium">IBM</span>
-                    <p className="text-sm text-muted-foreground">Security Verify Administrator</p>
+                    <span className="font-medium">IBM Security Verify SaaS v1 Administrator</span>
+                    <p className="text-sm text-muted-foreground">IBM</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-purple-500 mt-2 mr-2"></div>
+                  <div>
+                    <span className="font-medium">Mitigate Threats and Vulnerabilities</span>
+                    <p className="text-sm text-muted-foreground">Security Command Center</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-purple-500 mt-2 mr-2"></div>
+                  <div>
+                    <span className="font-medium">Cybersecurity Analyst</span>
+                    <p className="text-sm text-muted-foreground">TATA Forage</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-purple-500 mt-2 mr-2"></div>
+                  <div>
+                    <span className="font-medium">Cybercrime Project</span>
+                    <p className="text-sm text-muted-foreground">Abu Dhabi Police</p>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
           
-          <p className="text-center text-muted-foreground mt-4">
-            Currently focusing on advancing my expertise in sustainable technology solutions and exploring the integration of AI with IoT for environmental applications.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div className="border border-green-200 dark:border-green-800 rounded-lg p-4">
+              <h3 className="font-bold text-green-600 dark:text-green-400 mb-3">IoT & Specialized Training</h3>
+              <ul className="space-y-2">
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-green-500 mt-2 mr-2"></div>
+                  <div>
+                    <span className="font-medium">IOT Network Specialist</span>
+                    <p className="text-sm text-muted-foreground">Reliance Foundation</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-green-500 mt-2 mr-2"></div>
+                  <div>
+                    <span className="font-medium">Crime Scene Management</span>
+                    <p className="text-sm text-muted-foreground">Abu Dhabi Police</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="border border-amber-200 dark:border-amber-800 rounded-lg p-4">
+              <h3 className="font-bold text-amber-600 dark:text-amber-400 mb-3">Business & Analytics</h3>
+              <ul className="space-y-2">
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-amber-500 mt-2 mr-2"></div>
+                  <div>
+                    <span className="font-medium">Entrepreneurship and Innovation</span>
+                    <p className="text-sm text-muted-foreground">City of Moreton Bay</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 rounded-full bg-amber-500 mt-2 mr-2"></div>
+                  <div>
+                    <span className="font-medium">Power BI</span>
+                    <p className="text-sm text-muted-foreground">PWC Forage</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="bg-gradient-to-r from-blue-600/5 to-purple-600/5 rounded-lg p-4 mt-4">
+            <h3 className="font-bold text-center mb-3">Education</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="border border-blue-100 dark:border-blue-900 rounded-lg p-3">
+                <h4 className="font-medium">Bachelor of Computer Science & Cybersecurity</h4>
+                <p className="text-sm text-muted-foreground">Lincoln University College</p>
+                <p className="text-xs text-muted-foreground">08/2022 - 06/2025</p>
+              </div>
+              <div className="border border-blue-100 dark:border-blue-900 rounded-lg p-3">
+                <h4 className="font-medium">Diploma in Cybersecurity</h4>
+                <p className="text-sm text-muted-foreground">Oxford Home Study Center OHSC</p>
+                <p className="text-xs text-muted-foreground">02/2023 - 06/2024</p>
+              </div>
+              <div className="border border-blue-100 dark:border-blue-900 rounded-lg p-3">
+                <h4 className="font-medium">High School Diploma</h4>
+                <p className="text-sm text-muted-foreground">Department of Education</p>
+                <p className="text-xs text-muted-foreground">06/2019 - 04/2021</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Layout>
