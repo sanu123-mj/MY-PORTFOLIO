@@ -2,7 +2,7 @@ import { Layout } from "../components/shared/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Download, Github, Linkedin, Mail, MapPin, Phone, Globe } from "lucide-react";
+import { ArrowRight, Brain, Download, Github, Linkedin, Mail, MapPin, Phone, Globe } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Portfolio() {
@@ -187,6 +187,46 @@ export default function Portfolio() {
               </CardContent>
             </Card>
           ))}
+        </div>
+      </section>
+
+      {/* JAVAD AI Section */}
+      <section className="py-8 md:py-12">
+        <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-xl overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+            <div className="md:col-span-1 flex flex-col justify-center items-center text-center p-4">
+              <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-full p-6 mb-4">
+                <Brain className="h-12 w-12 text-white" />
+              </div>
+              <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">JAVAD AI</h2>
+              <p className="text-lg font-medium">Founder</p>
+              <p className="text-sm text-muted-foreground">Mar 2025 - Present · 3 mos</p>
+              <p className="text-sm font-medium mt-4">AI for Sustainable Impact | Climate Tech Innovator</p>
+            </div>
+            
+            <div className="md:col-span-2 flex flex-col justify-center p-4">
+              <h3 className="text-xl font-bold mb-4">AI-Powered Environmental Solutions</h3>
+              <p className="text-muted-foreground mb-4">
+                At JAVAD, we leverage cutting-edge AI to drive real-world environmental solutions. Our mission is to bridge the gap between 
+                sustainability goals and actionable results by developing intelligent tools that empower businesses, governments, and communities.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                We specialize in AI-driven accountability, creating systems that monitor, analyze, and enforce sustainable practices—turning 
+                data into measurable impact. From resource optimization to environmental protection, our technology is designed to deliver 
+                transparency and efficiency where it matters most.
+              </p>
+              <p className="font-medium text-primary">Join us in redefining sustainability through innovation.</p>
+              
+              <div className="flex space-x-3 mt-6">
+                <Button variant="default" size="sm">
+                  Learn More
+                </Button>
+                <Button variant="outline" size="sm">
+                  Contact Us
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
