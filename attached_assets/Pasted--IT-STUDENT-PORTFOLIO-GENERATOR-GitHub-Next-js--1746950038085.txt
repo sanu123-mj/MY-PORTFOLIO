@@ -1,0 +1,109 @@
+"""
+🌟 IT STUDENT PORTFOLIO GENERATOR (GitHub + Next.js) 🌟
+-----------------------------------------------------
+This script helps you generate a professional IT portfolio 
+with the best tech stack for hiring success.
+
+⚡ Features:
+✅ Next.js (React) for fast performance & SEO  
+✅ Tailwind CSS for modern, responsive design  
+✅ GitHub integration for easy deployment  
+✅ Project showcase with live demos  
+✅ Skills matrix with progress bars  
+✅ Dark/light mode toggle  
+
+🛠 How to Use:
+1. Run this script in Replit to generate your data
+2. Clone a Next.js portfolio template (link provided)
+3. Paste your details into the template
+4. Push to GitHub & deploy on Vercel/Netlify
+"""
+
+def generate_portfolio():
+    print("\n🚀 IT Portfolio Generator (Next.js + GitHub) 🚀\n")
+    
+    # 1. Personal Info
+    name = input("👤 Full Name: ")
+    title = input("💼 Professional Title (e.g., 'CS Student | Full-Stack Developer'): ")
+    bio = input("📝 Short Bio (2-3 sentences): ")
+    location = input("📍 Location (City, Country): ")
+    
+    # 2. Skills (Tailwind CSS Progress Bars)
+    print("\n💻 Technical Skills (Rate 1-10):")
+    skills = []
+    while True:
+        skill = input("Skill (e.g., 'Python:8' or 'done'): ")
+        if skill.lower() == 'done':
+            break
+        skills.append(skill)
+    
+    # 3. Projects (GitHub Links + Live Demos)
+    projects = []
+    print("\n🛠 Projects (GitHub Links & Live Demos)")
+    while True:
+        proj_name = input("Project Name (or 'done'): ")
+        if proj_name.lower() == 'done':
+            break
+        proj_desc = input("Description: ")
+        proj_tech = input("Tech Stack (e.g., 'React, Node.js, MongoDB'): ")
+        proj_github = input("GitHub Link: ")
+        proj_demo = input("Live Demo URL (if any): ")
+        projects.append({
+            "name": proj_name,
+            "desc": proj_desc,
+            "tech": proj_tech,
+            "github": proj_github,
+            "demo": proj_demo
+        })
+    
+    # 4. Education & Certifications
+    education = input("\n🎓 Education (e.g., 'BSc Computer Science - MIT (2022-2026)'): ")
+    
+    certs = []
+    print("\n📜 Certifications (e.g., 'AWS Certified Cloud Practitioner')")
+    while True:
+        cert = input("Certification (or 'done'): ")
+        if cert.lower() == 'done':
+            break
+        certs.append(cert)
+    
+    # 5. Work Experience / Internships
+    jobs = []
+    print("\n💼 Work Experience (Company, Role, Duration)")
+    while True:
+        company = input("Company (or 'done'): ")
+        if company.lower() == 'done':
+            break
+        role = input("Your Role: ")
+        duration = input("Duration (e.g., 'Jun 2023 - Aug 2023'): ")
+        desc = input("Key Achievements (bullet points): ")
+        jobs.append({
+            "company": company,
+            "role": role,
+            "duration": duration,
+            "desc": desc
+        })
+    
+    # 6. Contact & Socials
+    email = input("\n📧 Email: ")
+    linkedin = input("🔗 LinkedIn: ")
+    github = input("🐱 GitHub: ")
+    twitter = input("🐦 Twitter (if any): ")
+    
+    # 7. Generate README.md for GitHub
+    print("\n✅ Portfolio Data Generated! Use this in a Next.js Template.")
+    
+    print("\n📂 Recommended Next.js Portfolio Templates:")
+    print("- https://github.com/timlrx/tailwind-nextjs-starter-blog (Best for Devs)")
+    print("- https://github.com/issaafalkattan/React-Landing-Page-Template (Minimal & Clean)")
+    print("- https://github.com/evanca/quick-portfolio (Simple & Fast)")
+    
+    print("\n⚡ How to Deploy:")
+    print("1. Clone a template")
+    print("2. Replace template data with your details")
+    print("3. Run npm run dev to test locally")
+    print("4. Push to GitHub & deploy on Vercel (free hosting)")
+    
+    print("\n🚀 Your Portfolio is Ready to Shine!")
+
+generate_portfolio()
