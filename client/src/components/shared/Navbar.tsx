@@ -1,5 +1,5 @@
 import { Link, useLocation } from "wouter";
-import { ThemeToggle } from "@/components/shared/ThemeToggle";
+import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
 import { 
   LayoutDashboard, 

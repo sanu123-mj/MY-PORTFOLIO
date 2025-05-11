@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { Navbar } from "@/components/shared/Navbar";
+import { Navbar } from "./Navbar";
 
 interface LayoutProps {
   children: React.ReactNode;

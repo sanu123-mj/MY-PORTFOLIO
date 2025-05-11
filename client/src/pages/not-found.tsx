@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { AlertCircle, Home } from "lucide-react";
 import { Link } from "wouter";
-import { Layout } from "@/components/shared/Layout";
+import { Layout } from "../components/shared/Layout";
 
 export default function NotFound() {
   return (

@@ -1,4 +1,4 @@
-import { Layout } from "@/components/shared/Layout";
+import { Layout } from "../components/shared/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";

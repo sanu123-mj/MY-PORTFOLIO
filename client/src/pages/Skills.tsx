@@ -1,4 +1,4 @@
-import { Layout } from "@/components/shared/Layout";
+import { Layout } from "../components/shared/Layout";
 import { Progress } from "@/components/ui/progress";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
